@@ -1,6 +1,7 @@
 import React from "react"
 
 import { Form, Col, Button } from "react-bootstrap"
+import './emailListForm.scss'
 
 const EmailListForm = () => {
   return (
