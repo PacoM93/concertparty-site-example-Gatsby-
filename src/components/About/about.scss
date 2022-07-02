@@ -6,3 +6,46 @@
     padding-right: 2rem;
     margin-bottom: 2rem;
 }
+
+.contact-info{
+  .location{
+    margin-top: 1rem;
+    ul{
+      padding-inline-start: 1rem;
+      li{
+        list-style: none;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .phone{
+    margin-top: 1rem;
+    ul{
+      padding-inline-start: 1rem;
+      li {
+        list-style: none;
+        line-height: 2rem;
+      }
+    }
+  }
+  .socials{
+    margin-top: 1rem;
+    ul{
+      padding-inline-start: 1rem;
+      display: flex;
+      li {
+        list-style: none;
+        line-height: 2rem;
+        margin: 0 1rem;
+      }
+      a{
+        text-decoration: none;
+        color: #222529;
+        &:hover{
+          color: lighten($color: purple, $amount: 10%);
+        }
+      }
+    }
+  }
+}
