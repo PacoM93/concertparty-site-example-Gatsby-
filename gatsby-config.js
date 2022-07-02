@@ -17,6 +17,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-tranformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: false,
+              maxWidth: 700,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
