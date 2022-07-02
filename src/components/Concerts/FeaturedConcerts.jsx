@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 const FeaturedConcerts = () => {
   const data = useStaticQuery(graphql`
   {
-    allContentfulFeaturedConcerts {
+    allContentfulFeaturedConcerts (sort:{fields: createdAt}) {
       nodes {
         month
         name
