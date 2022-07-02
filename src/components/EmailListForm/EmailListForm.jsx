@@ -20,7 +20,12 @@ const EmailListForm = () => {
             </Form.Group>
           </Col>
           <Col md={2}>
-            <Button variant="primary" type="submit" size="sm" style={{marginTop: "2rem"}}>
+            <Button
+              variant="primary"
+              type="submit"
+              size="sm"
+              style={{ marginTop: "2rem" }}
+            >
               Submit
             </Button>
           </Col>
