@@ -1,5 +1,7 @@
 import React from "react"
-import WhyConcertParty from "./WhyConcertParty";
+import WhyConcertParty from "./WhyConcertParty"
+
+import "./about.scss"
 
 const About = () => {
   return (

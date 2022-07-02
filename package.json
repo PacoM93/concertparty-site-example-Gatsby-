@@ -16,6 +16,7 @@
     "gatsby-plugin-sass": "^5.17.0",
     "gatsby-plugin-sharp": "^4.17.0",
     "gatsby-source-filesystem": "^4.17.0",
+    "gatsby-transformer-remark": "^5.17.0",
     "gatsby-transformer-sharp": "^4.17.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
@@ -33,7 +34,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
