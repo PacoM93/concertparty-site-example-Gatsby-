@@ -1,5 +1,5 @@
 ---
-title: Why Concert Party
+title: Why Concert Party Rocks!!
 ---
 
 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -17,3 +17,5 @@ voluptate quidem dignissimos ullam qui corrupti saepe?
 - Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 - Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 - Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+![company](../../images/company/duy-pham-Cecb0_8Hx-o-unsplash.jpg)
