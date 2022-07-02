@@ -1,0 +1,20 @@
+.footer{
+    background-color: rgb(5, 5, 97);
+    color: white;
+    padding: 2rem 0;
+
+    .footer-links > li {
+        font-size: 1.3rem;
+        float: right;
+        padding-left: 2rem;
+        list-style: none;
+        
+        a {
+            color: white;
+
+            &:hover {
+                color: lighten($color: purple, $amount: 10%);
+            }
+        }
+    }
+}

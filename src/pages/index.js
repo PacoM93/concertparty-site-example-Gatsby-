@@ -1,13 +1,15 @@
-import React from 'react';
-import MainNavbar from '../components/Navbar/MainNavbar';
+import React from "react"
+import Layout from "../components/Layout"
+import HomeHero from '../components/Hero/HomeHero';
 
 const Index = () => {
-    return (
-        <div>
-            <MainNavbar />
-            <h1>Welcome to Concert Party!</h1>
-        </div>
-    );
+  return (
+    <div>
+      <Layout>
+      <HomeHero />
+      </Layout>
+    </div>
+  )
 }
 
-export default Index;
+export default Index

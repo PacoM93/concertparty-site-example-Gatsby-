@@ -1,26 +1,24 @@
-.main-navbar{
-    background-color: white;
-    border: 1px solid #eee;
+.main-navbar {
+  background-color: white;
+  border: 1px solid #eee;
 
-    .navbar-nav .nav-link{
-        color: #333;
+  .navbar-nav .nav-link {
+    color: #333;
 
-        &:hover{
-            color: purple;
-        }
-        &:active{
-            color: purple;
-        }
+    &:hover {
+      color: purple;
     }
-
-    .logo-concert{
-        color: lighten(purple, 10%);
-        font-size: 2rem;
+    &:active {
+      color: purple;
     }
-    .logo-party{
-        color: lighten(rgb(0, 0, 0), 10%);
-        font-size: 1.5rem;
-    }
+  }
 
-    
+  .logo-concert {
+    color: lighten(purple, 10%);
+    font-size: 2rem;
+  }
+  .logo-party {
+    color: lighten(rgb(0, 0, 0), 10%);
+    font-size: 1.5rem;
+  }
 }

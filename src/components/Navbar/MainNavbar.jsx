@@ -1,7 +1,6 @@
 import React from "react"
 import { Navbar, Nav, Container } from "react-bootstrap"
 
-import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
 
 import "./mainNavbar.scss"
