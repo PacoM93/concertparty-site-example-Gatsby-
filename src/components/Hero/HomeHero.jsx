@@ -6,13 +6,13 @@ import jordon from '../../images/hero/jordon-conner-tIr-PWgSYB4-unsplash.jpg'
 import yvette from '../../images/hero/yvette-de-wit-8XLapfNMW04-unsplash.jpg'
 import max from '../../images/hero/max-brinton-HvWWo_dyFJQ-unsplash.jpg'
 
-
+import './homeHero.scss'
 
 const HomeHero = () => {
   return (
     <div className="home-hero">
       <Carousel>
-        <Carousel.Item>
+        <Carousel.Item className="home-carousel-item">
           <img
             className="d-block w-100"
             src={anthony}
@@ -23,7 +23,7 @@ const HomeHero = () => {
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="home-carousel-item" >
           <img
             className="d-block w-100"
             src={yvette}
@@ -35,7 +35,7 @@ const HomeHero = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="home-carousel-item">
           <img
             className="d-block w-100"
             src={max}
