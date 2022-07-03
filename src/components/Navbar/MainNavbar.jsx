@@ -9,7 +9,7 @@ const MainNavbar = () => {
   return (
     <Navbar bg="light" expand="lg" className="main-navbar">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <span className="logo-concert">Concert</span>
           <span className="logo-party">Party</span>
         </Navbar.Brand>
