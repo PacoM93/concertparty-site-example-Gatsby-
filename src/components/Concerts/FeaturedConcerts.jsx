@@ -1,6 +1,6 @@
 import React from "react"
 import Concert from "./Concert"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 
 const FeaturedConcerts = () => {
   const data = useStaticQuery(graphql`
@@ -37,7 +37,9 @@ const FeaturedConcerts = () => {
         image: concert.image.file.url
     }
     return <div className="col-md-4" key={concert.slug}>
+      <Link to={`/concerts/${concert.slug}`}>
         <Concert concertDetails={deatails} />
+      </Link>
     </div>
   })
 

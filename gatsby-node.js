@@ -1,15 +1,14 @@
-const path = require("path");
-const { node } = require( "prop-types" );
+const path = require("path")
 
 exports.createPages = async ({ graphql, actions }) => {
   const concertDetailsTemplate = path.resolve(
     `./src/templates/ConcertDetails.jsx`
   )
 
-  //query slugs from Contentful
+  // query slugs from Contentful
   const result = await graphql(`
     query {
-      allContentfulFeaturedoncerts {
+      allContentfulFeaturedConcerts {
         nodes {
           slug
         }
@@ -18,14 +17,14 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   // create pages for each concert
-  const nodes = result.data.allContentfulFeaturedconcerts.nodes
-  nodes.map((node) => {
+  const nodes = result.data.allContentfulFeaturedConcerts.nodes
+  nodes.map(node => {
     node.url = `/concerts/${node.slug}`
 
     actions.createPage({
       path: node.url,
       component: concertDetailsTemplate,
-      context: { slug: node.slug}
+      context: { slug: node.slug },
     })
   })
 }
