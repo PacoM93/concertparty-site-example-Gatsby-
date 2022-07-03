@@ -37,7 +37,7 @@ const FeaturedConcerts = () => {
         image: concert.image.file.url
     }
     return <div className="col-md-4" key={concert.slug}>
-      <Link to={`/concerts/${concert.slug}`}>
+      <Link to={`/concerts/${concert.slug}`} className='concert-link'>
         <Concert concertDetails={deatails} />
       </Link>
     </div>
