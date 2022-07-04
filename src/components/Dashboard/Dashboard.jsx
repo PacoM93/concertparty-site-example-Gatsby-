@@ -1,6 +1,7 @@
 import React from "react"
 import Tab from "react-bootstrap/Tab"
 import Tabs from "react-bootstrap/Tabs"
+import Concerts from "./Concerts";
 
 import "./dashboard.scss"
 
@@ -13,6 +14,12 @@ const Dashboard = () => {
         </div>
         <Tabs defaultActiveKey="upcoming">
           <Tab eventKey="upcoming" title="Upcoming">
+            <div className="upcoming">
+                <Concerts />
+                <Concerts />
+            </div>
+          </Tab>
+          <Tab eventKey="booked" title="Booked">
             <div className="booked">You have no booked concerts yet.</div>
           </Tab>
         </Tabs>
