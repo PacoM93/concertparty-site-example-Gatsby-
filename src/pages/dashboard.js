@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from '../components/Layout';
 import Profile from "../components/Profile/Profile";
+import Dashboard from '../components/Dashboard/Dashboard';
 
-const Dashboard = () => {
+const dashboard = () => {
   return (
     <Layout>
         <div className="container mt-4 mb-4">
@@ -13,7 +14,7 @@ const Dashboard = () => {
                     <Profile />
                 </div>
                 <div className="col">
-                    my concerts
+                    <Dashboard />
                 </div>
             </div>
         </div>
@@ -21,4 +22,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default dashboard
