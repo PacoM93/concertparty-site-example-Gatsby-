@@ -9,7 +9,7 @@ const LoginWrapper = () => {
   const data = useStaticQuery(graphql`
     query{
         desktop: file (relativePath: {
-            eq: "images/hero/jordon-conner-tIr-PWgSYB4-unsplash.jpg"
+            eq: "hero/jordon-conner-tIr-PWgSYB4-unsplash.jpg"
         }) {
             childImageSharp {
                 fluid(quality: 90, maxWidth: 1920){
@@ -28,9 +28,9 @@ const LoginWrapper = () => {
         <div className="col-5">
           <div className="background-section">
             <BackgroundImage
-              fluid={bfImg}
+              fluid={bgImg}
               background={"#040e18"}
-              style={{ heigth: "100vh" }}
+              style={{ height: "100vh" }}
             >
               <div className="bg-text">
                 <h1>When you want to live, you go to concerts!</h1>
