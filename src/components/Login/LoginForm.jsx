@@ -1,11 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import { Form, Button } from "react-bootstrap"
+import { navigate } from "gatsby"
 
 const LoginForm = () => {
-    const handleLogin = (event) => {
-        event.preventDefault()
-        console.log('Login successful')
-    }
+  const [isAuth, setIsAuth] = useState(false)
+
+  const handleLogin = event => {
+    event.preventDefault()
+    setIsAuth(true)
+    setTimeout(() => {
+      navigate("/dashboard")
+    }, 3000)
+  }
+
+  const loginBtnState = isAuth ? (
+    <>
+      <span className="spinner-grow spinner-grow-sm"></span> Loading...
+    </>
+  ) : (
+    "Login"
+  )
 
   return (
     <Form>
@@ -21,8 +35,13 @@ const LoginForm = () => {
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
-      <Button variant="dark" type="submit" onClick={handleLogin}>
-        Login
+      <Button
+        variant="dark"
+        type="submit"
+        onClick={handleLogin}
+        disabled={isAuth}
+      >
+        {loginBtnState}
       </Button>
     </Form>
   )
