@@ -5,7 +5,7 @@ import Dashboard from '../components/Dashboard/Dashboard';
 
 const dashboard = () => {
   return (
-    <Layout>
+    <Layout auth={true}>
         <div className="container mt-4 mb-4">
             <h5>MY CONCERT CENTER</h5>
             <br />

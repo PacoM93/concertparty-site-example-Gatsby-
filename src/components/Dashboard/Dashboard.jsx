@@ -31,8 +31,8 @@ const Dashboard = () => {
 
 let allConcerts
 
-if(requesting=== false && concerts.length >1){
-  concerts.map(concert => {
+if(requesting === false && concerts.length > 1){
+  allConcerts = concerts.map(concert => {
       const venue = concert.entities.length !==0 ? concert.entities[0].name: "Venue N/A"
       const concertInfo = {
         title: concert.title,

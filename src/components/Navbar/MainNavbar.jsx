@@ -5,7 +5,8 @@ import { Link } from "gatsby"
 
 import "./mainNavbar.scss"
 
-const MainNavbar = () => {
+const MainNavbar = ({ auth }) => {
+  const authLinkText = auth ? "Logout" : "Login"
   return (
     <Navbar bg="light" expand="lg" className="main-navbar">
       <Container>
@@ -20,7 +21,7 @@ const MainNavbar = () => {
               Featured concerts
             </Link>
             <Link to="/login" className="nav-link">
-              Login
+              {authLinkText}
             </Link>
           </Nav>
         </Navbar.Collapse>
