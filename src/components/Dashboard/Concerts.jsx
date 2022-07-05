@@ -1,11 +1,12 @@
 import React from "react"
+import Moment from "react-moment"
 
 const Concerts = ({
   concertInfo = {
     title: "Title",
     venue: "Venue",
-    startDate: "12th July",
-    endDate: "25th July",
+    startDate: "2022-07-25T23:40:47Z",
+    endDate: "2022-07-25T23:40:47Z",
     tags: ["concert", "music"],
   },
 }) => {
@@ -15,14 +16,22 @@ const Concerts = ({
       <ul>
         <li>{concertInfo.venue}</li>
         <li>
-          {concertInfo.startDate} to {concertInfo.endDate}
+          <small>
+            <Moment format="D MM YYYY">{concertInfo.startDate}</Moment>
+          </small>
+          &nbsp; to &nbsp;
+          <small>
+            <Moment format="D MM YYYY">{concertInfo.endDate}</Moment>
+          </small>
         </li>
       </ul>
       <hr />
       <div className="row">
         <div className="col">
           {concertInfo.tags.map((tag, index) => (
-            <span className="badge badge-pill badge-light" key={index}>{tag}</span>
+            <span className="badge badge-pill badge-light" key={index}>
+              {tag}
+            </span>
           ))}
         </div>
         <div className="col text-right">
