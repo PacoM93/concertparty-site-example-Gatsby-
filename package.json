@@ -18,7 +18,7 @@
     "gatsby-plugin-sass": "^5.17.0",
     "gatsby-plugin-sharp": "^4.17.0",
     "gatsby-remark-images": "^6.17.0",
-    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-source-contentful": "^7.15.0",
     "gatsby-source-filesystem": "^4.17.0",
     "gatsby-transformer-remark": "^5.17.0",
@@ -40,7 +40,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "CI=gatsby build",
     "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
