@@ -2,10 +2,9 @@ require("dotenv").config({path: `.env.${process.env.NODE_ENV}`})
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Concerts Party`,
+    description: `KConcert Party is a global community connectiong music and show lovers to the concert around the world.`,
+    author: `@PacoMontes93`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -54,15 +53,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `ConcertParty`,
+        short_name: `ConcertParty`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/people/zak.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
